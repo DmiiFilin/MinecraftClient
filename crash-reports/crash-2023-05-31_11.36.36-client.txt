@@ -1,0 +1,536 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 2023-05-31 11:36:37
+Description: Initializing game
+
+java.lang.VerifyError: Bad local variable type
+Exception Details:
+  Location:
+    net/minecraft/client/renderer/LevelRenderer.m_109599_(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lcom/mojang/math/Matrix4f;)V @2706: aload
+  Reason:
+    Type integer (current frame, locals[25]) is not assignable to reference type
+  Current Frame:
+    bci: @2706
+    flags: { }
+    locals: { 'net/minecraft/client/renderer/LevelRenderer', 'com/mojang/blaze3d/vertex/PoseStack', float, long, long_2nd, integer, 'net/minecraft/client/Camera', 'net/minecraft/client/renderer/GameRenderer', 'net/minecraft/client/renderer/LightTexture', 'com/mojang/math/Matrix4f', 'net/minecraft/util/profiling/ProfilerFiller', integer, 'net/minecraft/world/phys/Vec3', double, double_2nd, double, double_2nd, double, double_2nd, 'com/mojang/math/Matrix4f', integer, 'net/minecraft/client/renderer/culling/Frustum', integer, float, integer, integer, integer, 'net/minecraft/client/renderer/MultiBufferSource$BufferSource', integer, integer, 'java/util/Collection', integer, 'net/minecraft/client/renderer/culling/Frustum', 'java/util/Set', 'java/util/Iterator' }
+    stack: { }
+  Bytecode:
+    0000000: 2ab4 0233 b609 1024 b809 142a b401 ff2a
+    0000010: b402 3319 062a b401 fbb4 0918 b609 1c2a
+    0000020: b401 fd2a b402 3319 062a b401 fbb4 091f
+    0000030: b609 232a b402 33b6 068e 3a0a 190a 1309
+    0000040: 25b9 06ac 0200 2ab4 0233 b609 2819 0a13
+    0000050: 092a b906 ac02 002a b402 33b6 092d 360b
+    0000060: 2ab4 0233 b609 31b6 0937 1309 3815 0b04
+    0000070: b609 3e57 1906 b603 793a 0c19 0cb6 08f5
+    0000080: 390d 190c b608 f839 0f19 0cb6 08fb 3911
+    0000090: 2bb6 08ef b608 f23a 1319 0a13 06b1 b906
+    00000a0: ac02 002a b408 c3c6 0007 04a7 0004 0336
+    00000b0: 1415 1499 0026 2ab4 08c3 3a15 1915 2ab4
+    00000c0: 0198 b408 d32a b401 98b4 08d6 2ab4 0198
+    00000d0: b408 d9b6 0903 a700 092a b409 003a 152a
+    00000e0: b401 fbb6 06af 1309 40b9 06ac 0200 2ab4
+    00000f0: 0942 9900 732a 1913 1909 190c b406 b719
+    0000100: 0cb4 06bf 190c b406 c215 1499 0011 bb07
+    0000110: 2859 1913 1909 b708 fea7 0005 1915 b609
+    0000120: 442a 03b5 0942 2ab4 08c3 3a15 1915 b802
+    0000130: 8599 000d b809 069a 0007 04a7 0004 03b5
+    0000140: 0909 1915 190c b406 b719 0cb4 06bf 190c
+    0000150: b406 c2b6 0903 2a19 1503 02b6 075e 2a19
+    0000160: 1502 b607 442a b409 4699 004d 2a19 1319
+    0000170: 0919 0cb4 06b7 190c b406 bf19 0cb4 06c2
+    0000180: 1906 24b8 094a b609 442a 03b5 0946 2ab4
+    0000190: 08c3 3a15 1915 190c b406 b719 0cb4 06bf
+    00001a0: 190c b406 c2b6 0903 04b3 0737 04b3 0747
+    00001b0: 2a19 15b8 094e 190a 1309 4fb9 06ac 0200
+    00001c0: b802 8599 001f 0303 2ab4 01fb b604 5cb6
+    00001d0: 0461 2ab4 01fb b604 5cb6 0464 b809 53a7
+    00001e0: 001c 0303 2ab4 01fb b604 5cb6 0461 2ab4
+    00001f0: 01fb b604 5cb6 0464 b809 5619 0624 2ab4
+    0000200: 01fb b402 502a b401 fbb4 0381 b606 1e19
+    0000210: 0724 b609 59b8 095d b809 6011 4100 b209
+    0000220: 63b8 0967 b802 8536 1615 1699 0010 b809
+    0000230: 6a2b 1906 24b8 096e b809 7119 07b6 0974
+    0000240: 3817 2ab4 01fb b402 50b6 0237 180d b802
+    0000250: 6118 0fb8 0261 b609 789a 0013 2ab4 01fb
+    0000260: b409 7cb6 0982 b609 8799 0007 04a7 0004
+    0000270: 0336 182a b401 fbb4 0250 b602 3718 0db8
+    0000280: 0261 180f b802 61b6 0978 3619 b809 8a9a
+    0000290: 000f b809 8d9a 0009 b809 9099 0046 b209
+    00002a0: 939a 0040 190a 1309 95b9 06ac 0200 1516
+    00002b0: 9900 06b8 0998 ba05 7100 00b8 02a6 2a2b
+    00002c0: 1909 2419 0615 1919 0617 1715 1824 ba09
+    00002d0: a000 00b6 09a4 1516 9900 0cb8 09a7 a700
+    00002e0: 06b8 09aa b209 adb6 0231 9900 37b2 09ad
+    00002f0: 1007 bd00 0559 03b2 09b1 5359 042a 5359
+    0000300: 052b 5359 0619 0953 5907 2ab4 0239 b802
+    0000310: 3f53 5908 1906 5359 1006 1915 53b6 09b5
+    0000320: 5719 0a13 09b7 b906 ac02 0019 06b2 09bb
+    0000330: 1717 1302 f4b8 09be 1518 24b8 09c2 190a
+    0000340: 1309 c4b9 06ac 0200 2a19 0619 152a b401
+    0000350: fbb4 054f b609 c7b6 09cb 2a59 b409 cd04
+    0000360: 60b5 09cd 2a19 0619 1515 142a b401 fbb4
+    0000370: 054f b609 c7b6 09cf 190a 1309 d1b9 06ac
+    0000380: 0200 2a19 06b6 09d4 190a 1309 d6b9 06ac
+    0000390: 0200 b209 d9b6 06dd 2ab4 01fb b403 81b4
+    00003a0: 09dc 9900 242a b401 fbb6 06af 1309 deb9
+    00003b0: 06ac 0200 b809 e32a b401 fbb6 06af 1309
+    00003c0: d6b9 06ac 0200 b809 e699 000d b209 e999
+    00003d0: 0007 03b8 09ec 2ab8 09f2 2b18 0d18 0f18
+    00003e0: 1119 09b6 09f6 2ab4 01fb b609 fab2 09ff
+    00003f0: b60a 0503 2ab4 01fb b403 81b6 0a08 b603
+    0000400: 8cc0 023b b60a 0b9e 0007 04a7 0004 03b6
+    0000410: 0a0f 2ab8 0a12 2b18 0d18 0f18 1119 09b6
+    0000420: 09f6 2ab4 01fb b609 fab2 09ff b60a 05b6
+    0000430: 0a15 2ab8 0a18 2b18 0d18 0f18 1119 09b6
+    0000440: 09f6 1516 9900 06b8 0a1b 2ab4 0233 b602
+    0000450: 37b6 0a1e 9900 102b b608 efb6 08f2 b80a
+    0000460: 23a7 000d 2bb6 08ef b608 f2b8 0a26 1516
+    0000470: 9900 06b8 0a29 b80a 2e19 0a13 0a30 b906
+    0000480: ac02 00b2 0a32 0460 b30a 322a 03b5 0678
+    0000490: 2a03 b506 7d2a 03b5 0a34 2ab4 0496 c600
+    00004a0: 262a b404 96b2 0963 b60a 372a b404 962a
+    00004b0: b401 fbb6 0455 b60a 3b2a b401 fbb6 0455
+    00004c0: 03b6 0a3e 2ab4 049a c600 0d2a b404 9ab2
+    00004d0: 0963 b60a 372a b605 2b99 0018 2ab4 0470
+    00004e0: b209 63b6 0a37 2ab4 01fb b604 5503 b60a
+    00004f0: 3e03 361a 2ab4 0201 b60a 423a 1bb8 0a45
+    0000500: 9900 06b8 0a4a 2ab4 0233 b607 c436 1c2a
+    0000510: b402 33b6 07c7 361d b80a 4d9a 0009 b80a
+    0000520: 5099 0009 b805 6fb6 0a55 2ab4 0233 b60a
+    0000530: 59b9 0a5c 0100 3a1e 191e b907 9101 0099
+    0000540: 0123 191e b907 9401 00c0 063c 3a1f 191f
+    0000550: b60a 5f3a 202a b401 ba19 20b8 0a63 b60a
+    0000560: 679a 001a 1920 b603 a515 1ca4 0010 1920
+    0000570: b603 a515 1da2 0006 a7ff c019 1f2a b401
+    0000580: fbb4 054f a600 142a b401 fbb4 054f b609
+    0000590: c79a 0007 04a7 0004 0336 212a b401 fd19
+    00005a0: 1f19 1518 0d18 0f18 11b6 0a6b 9a00 1219
+    00005b0: 1f2a b401 fbb4 054f b60a 6f99 00a4 191f
+    00005c0: b60a 5f3a 222a b402 3319 22b6 03a5 b60a
+    00005d0: 729a 000c 2a19 22b6 0a75 9900 8519 1f19
+    00005e0: 06b6 0a78 a600 2419 06b6 0a7b 9a00 1c19
+    00005f0: 06b6 0a78 c10a 7d99 0068 1906 b60a 78c0
+    0000600: 0a7d b60a 8099 005a 191f c106 9799 0012
+    0000610: 1906 b60a 7819 1fa5 0008 1521 9900 4319
+    0000620: 1fb6 0a84 b60a 873a 232a b401 f419 23b9
+    0000630: 0a89 0200 c007 ad3a 2419 24c7 001a bb01
+    0000640: bc59 b70a 8a3a 242a b401 f419 2319 24b9
+    0000650: 0a8e 0300 5719 2419 1fb9 07af 0200 57a7
+    0000660: fed9 2ab4 01f4 b90a 9101 003a 1e19 1eb9
+    0000670: 0a92 0100 3a1f 191f b907 9101 0099 0113
+    0000680: 191f b907 9401 00c0 07ad 3a20 1920 b90a
+    0000690: 9301 003a 2119 21b9 0791 0100 9900 ea19
+    00006a0: 21b9 0794 0100 c006 3c3a 222a 59b4 0678
+    00006b0: 0460 b506 7819 22b4 0a96 9a00 2119 2219
+    00006c0: 22b6 063f b50a 9919 2219 22b6 0a9a b50a
+    00006d0: 9d19 2219 22b6 0642 b50a a02a b605 2b99
+    00006e0: 005a 2ab4 01fb 1922 b60a a399 004e 0436
+    00006f0: 1a2a b402 01b6 0aa7 3a24 1924 3a23 1922
+    0000700: b60a aa36 2511 00ff 3626 1525 1010 7a11
+    0000710: 00ff 7e36 2715 2510 087a 1100 ff7e 3628
+    0000720: 1525 1100 ff7e 3629 1924 1527 1528 1529
+    0000730: 1100 ffb6 0aaf a700 33b2 0ab2 b602 3199
+    0000740: 0026 2ab6 052b 9900 1f19 22b2 0ab2 04bd
+    0000750: 0005 5903 2ab4 01fb b405 4f53 b802 4d99
+    0000760: 0006 0436 1a19 1b3a 2315 1699 0008 1922
+    0000770: b80a b62a 1922 180d 180f 1811 242b 1923
+    0000780: b60a baa7 ff12 1920 b90a bb01 00a7 fee9
+    0000790: 191b b60a be2a 2bb6 0ac2 191b b209 ffb8
+    00007a0: 0ac6 b60a ca19 1bb2 09ff b80a cdb6 0aca
+    00007b0: 191b b209 ffb8 0ad0 b60a ca19 1bb2 09ff
+    00007c0: b80a d3b6 0aca b80a 4599 0006 b80a d615
+    00007d0: 1699 0009 b80a d9b8 0adc 190a 130a deb9
+    00007e0: 06ac 0200 b80a e3b2 0ae6 b602 3136 1f19
+    00007f0: 153a 202a b401 bfb9 0a93 0100 3a21 1921
+    0000800: b907 9101 0099 0163 1921 b907 9401 00c0
+    0000810: 0014 3a22 1922 b407 10b6 07a4 b607 ab3a
+    0000820: 2319 23b9 07ae 0100 9a01 3d19 23b9 0a93
+    0000830: 0100 3a24 1924 b907 9101 0099 012a 1924
+    0000840: b907 9401 00c0 0ae8 3a25 151f 9900 2619
+    0000850: 25b2 0ae6 03bd 0005 b80a ebc0 0aed 3a26
+    0000860: 1926 c600 1019 2019 26b6 079c 9a00 06a7
+    0000870: ffc5 1516 9900 0819 25b8 0af1 1925 b60a
+    0000880: f43a 2619 1b3a 272b b60a f72b 1926 b603
+    0000890: f787 180d 6719 26b6 03a5 8718 0f67 1926
+    00008a0: b603 fa87 1811 67b6 0afa 2ab4 015d 1926
+    00008b0: b60a fdb9 0b00 0300 c00b 023a 2819 28c6
+    00008c0: 005c 1928 b90b 0301 009a 0052 1928 b90b
+    00008d0: 0601 00c0 0b08 b60b 0b36 2915 299b 003e
+    00008e0: 2bb6 08ef 3a2a bb0b 0d59 2ab4 0201 b60b
+    00008f0: 10b2 0b15 1529 b90b 1802 00c0 09ee b60b
+    0000900: 1c19 2ab6 08f2 192a b60b 20b7 0b23 3a2b
+    0000910: 191b 192b ba0b 2c00 003a 27b2 0b2f b602
+    0000920: 3199 0026 2ab6 052b 9900 1f19 25b2 0b2f
+    0000930: 04bd 0005 5903 2ab4 01fb b405 4f53 b802
+    0000940: 4d99 0006 0436 1a2a b401 ff19 2524 2b19
+    0000950: 27b6 0b33 2bb6 0b36 2a59 b40a 3404 60b5
+    0000960: 0a34 a7fe d2a7 fe99 2ab4 014c 593a 21c2
+    0000970: 2ab4 014c b907 8c01 003a 2219 22b9 0791
+    0000980: 0100 9900 b519 22b9 0794 0100 c00a e83a
+    0000990: 2315 1f99 0026 1923 b20a e603 bd00 05b8
+    00009a0: 0aeb c00a ed3a 2419 24c6 0010 1920 1924
+    00009b0: b607 9c9a 0006 a7ff c515 1699 0008 1923
+    00009c0: b80a f119 23b6 0af4 3a24 2bb6 0af7 2b19
+    00009d0: 24b6 03f7 8718 0d67 1924 b603 a587 180f
+    00009e0: 6719 24b6 03fa 8718 1167 b60a fab2 0b2f
+    00009f0: b602 3199 0026 2ab6 052b 9900 1f19 23b2
+    0000a00: 0b2f 04bd 0005 5903 2ab4 01fb b405 4f53
+    0000a10: b802 4d99 0006 0436 1a2a b401 ff19 2324
+    0000a20: 2b19 1bb6 0b33 2bb6 0b36 2a59 b40a 3404
+    0000a30: 60b5 0a34 a7ff 4719 21c3 a700 0b3a 2c19
+    0000a40: 21c3 192c bf2a 2bb6 0ac2 191b b809 f2b6
+    0000a50: 0aca 191b b80b 39b6 0aca 191b b80b 3cb6
+    0000a60: 0aca 191b b80b 41b6 0aca 191b b80b 44b6
+    0000a70: 0aca 191b b80b 47b6 0aca 191b b80b 4ab6
+    0000a80: 0aca 191b b80b 4db6 0aca 191b b80b 50b6
+    0000a90: 0aca 1919 03b8 0b56 191b b80b 59b6 0aca
+    0000aa0: 2ab4 0201 b60a a7b6 0b5c b80a 4599 0006
+    0000ab0: b80b 5fb2 09d9 b607 4a15 1a99 0016 2ab4
+    0000ac0: 042e 24b6 0b63 2ab4 01fb b604 5503 b60a
+    0000ad0: 3e15 1699 0006 b80b 662a 04b5 01e9 190a
+    0000ae0: 130b 68b9 06ac 0200 2ab4 015d b90b 6c01
+    0000af0: 00b9 0b71 0100 3a21 1921 b907 9101 0099
+    0000b00: 010e 1921 b907 9401 00c0 0061 3a22 1922
+    0000b10: b90b 7401 00b8 0b78 3a23 1923 b603 f787
+    0000b20: 180d 6739 2419 23b6 03a5 8718 0f67 3926
+    0000b30: 1923 b603 fa87 1811 6739 2818 2418 246b
+    0000b40: 1826 1826 6b63 1828 1828 6b63 140b 7997
+    0000b50: 9d00 ba19 22b9 0b7d 0100 c00b 023a 2a19
+    0000b60: 2ac6 00a9 192a b90b 0301 009a 009f 192a
+    0000b70: b90b 0601 00c0 0b08 b60b 0b36 2b2b b60a
+    0000b80: f72b 1923 b603 f787 180d 6719 23b6 03a5
+    0000b90: 8718 0f67 1923 b603 fa87 1811 67b6 0afa
+    0000ba0: 2bb6 08ef 3a2c bb0b 0d59 2ab4 0201 b60b
+    0000bb0: 10b2 0b15 152b b90b 1802 00c0 09ee b60b
+    0000bc0: 1c19 2cb6 08f2 192c b60b 20b7 0b23 3a2d
+    0000bd0: 2ab4 0233 b60b 8119 23b6 0b87 3a2e 192e
+    0000be0: c700 08b2 0b8d 3a2e 2ab4 01fb b60b 912a
+    0000bf0: b402 3319 23b6 06d2 1923 2ab4 0233 2b19
+    0000c00: 2d19 2eb6 0b97 2bb6 0b36 a7fe ee2a 03b5
+    0000c10: 01e9 b80b 9cb2 0a32 0464 b30a 322a 2bb6
+    0000c20: 0ac2 2ab4 01fb b409 183a 2115 0599 00b0
+    0000c30: 1921 c600 ab19 21b6 0ba0 b20b a4a6 00a0
+    0000c40: 190a 130b a6b9 06ac 0200 1921 c00b a8b6
+    0000c50: 0bab 3a22 2ab4 0233 1922 b606 d23a 2315
+    0000c60: 1699 0006 b80b aeb2 0bb1 1006 bd00 0559
+    0000c70: 032a 5359 0419 0653 5905 1921 5359 0624
+    0000c80: b802 4453 5907 2b53 5908 191b 53b8 0bb4
+    0000c90: 9a00 3a19 23b6 0bb7 9a00 322a b402 33b6
+    0000ca0: 0bbb 1922 b60b c099 0023 191b b80b c3b6
+    0000cb0: 0b1c 3a24 2a2b 1924 1906 b60a 7818 0d18
+    0000cc0: 0f18 1119 2219 23b6 0bc7 1516 9900 0e19
+    0000cd0: 1bb8 0bc3 b60a cab8 0bca a700 3d19 21c6
+    0000ce0: 0038 1921 b60b a0b2 0bcd a600 2db2 0bb1
+    0000cf0: 1006 bd00 0559 032a 5359 0419 0653 5905
+    0000d00: 1921 5359 0624 b802 4453 5907 2b53 5908
+    0000d10: 191b 53b6 09b5 57b8 0bd1 3a22 1922 b60a
+    0000d20: f719 222b b608 efb6 08f2 b60b d4b8 0bd7
+    0000d30: 1516 9900 09b8 0bda b80b dd2a b401 fbb4
+    0000d40: 0be1 2b19 1b18 0d18 0f18 11b6 0be7 1922
+    0000d50: b60b 36b8 0bd7 191b b80b eab6 0aca 191b
+    0000d60: b80b 59b6 0aca 191b b80b edb6 0aca 191b
+    0000d70: b80b f0b6 0aca 191b b80b f3b6 0aca 191b
+    0000d80: b80b f6b6 0aca 191b b80b f9b6 0aca 191b
+    0000d90: b80b fcb6 0aca 191b b80b ffb6 0aca 191b
+    0000da0: b80c 02b6 0aca 191b b80c 05b6 0aca 1919
+    0000db0: 04b8 0b56 2ab4 0201 b60b 10b6 0c08 1516
+    0000dc0: 9900 2719 1bb6 0c08 b80c 0bb8 0c0e b80c
+    0000dd0: 11b6 08c9 3a23 1907 2b19 0624 b80c 1519
+    0000de0: 23b8 0c18 b80c 1b2a b404 34c6 00de 191b
+    0000df0: b80b c3b6 0aca 191b b60c 082a b404 94b2
+    0000e00: 0963 b60a 372a b404 942a b401 fbb6 0455
+    0000e10: b60a 3b19 0a13 048a b906 ac02 002a b80c
+    0000e20: 1e2b 180d 180f 1811 1909 b609 f619 0a13
+    0000e30: 0c20 b906 ac02 002a b80c 232b 180d 180f
+    0000e40: 1811 1909 b609 f62a b404 98b2 0963 b60a
+    0000e50: 372a b404 982a b401 fbb6 0455 b60a 3bb2
+    0000e60: 0c27 b60c 2a19 0a13 048e b906 ac02 002a
+    0000e70: b401 fbb4 0c2e 2b19 1b19 0819 0624 1915
+    0000e80: b60c 34b2 09ad b602 3199 0037 b209 ad10
+    0000e90: 07bd 0005 5903 b20c 3753 5904 2a53 5905
+    0000ea0: 2b53 5906 1909 5359 072a b402 39b8 023f
+    0000eb0: 5359 0819 0653 5910 0619 1553 b609 b557
+    0000ec0: b20c 27b6 0c3a a701 3f19 0a13 048a b906
+    0000ed0: ac02 00b2 09d9 b606 ddb8 0c3d 9900 5ab8
+    0000ee0: 0c40 2ab4 01fb b40c 2e2b 191b 1908 1906
+    0000ef0: 2419 15b6 0c34 b80c 43b2 09ad b602 3199
+    0000f00: 0037 b209 ad10 07bd 0005 5903 b20c 3753
+    0000f10: 5904 2a53 5905 2b53 5906 1909 5359 072a
+    0000f20: b402 39b8 023f 5359 0819 0653 5910 0619
+    0000f30: 1553 b609 b557 1516 9900 06b8 0c46 2ab4
+    0000f40: 0494 c600 0d2a b404 94b2 0963 b60a 372a
+    0000f50: b80c 1e2b 180d 180f 1811 1909 b609 f615
+    0000f60: 1699 0006 b80c 49b2 09d9 b607 4a19 1bb8
+    0000f70: 0bc3 b60a ca19 1bb6 0c08 190a 130c 20b9
+    0000f80: 06ac 0200 2ab8 0c23 2b18 0d18 0f18 1119
+    0000f90: 09b6 09f6 190a 1304 8eb9 06ac 0200 b80c
+    0000fa0: 3d9a 0064 1516 9900 06b8 0c40 2ab4 01fb
+    0000fb0: b40c 2e2b 191b 1908 1906 2419 15b6 0c34
+    0000fc0: 1516 9900 06b8 0c43 b209 adb6 0231 9900
+    0000fd0: 37b2 09ad 1007 bd00 0559 03b2 0c37 5359
+    0000fe0: 042a 5359 052b 5359 0619 0953 5907 2ab4
+    0000ff0: 0239 b802 3f53 5908 1906 5359 1006 1915
+    0001000: 53b6 09b5 5704 b809 ec19 22b6 0af7 1922
+    0001010: 2bb6 08ef b608 f2b6 0bd4 b80b d72a b401
+    0001020: fbb4 0381 b60c 4db2 0c52 a500 5b2a b404
+    0001030: 34c6 0034 2ab4 049c b209 63b6 0a37 b20c
+    0001040: 55b6 0c2a 190a 1304 92b9 06ac 0200 2a2b
+    0001050: 1909 2418 0d18 0f18 11b6 0c59 b20c 55b6
+    0001060: 0c3a a700 2319 0a13 0492 b906 ac02 00ba
+    0001070: 0c5e 0000 b802 a62a 2b19 0924 180d 180f
+    0001080: 1811 b60c 592a b404 34c6 007f b20c 61b6
+    0001090: 0c2a 190a 1304 90b9 06ac 0200 2a19 0824
+    00010a0: 180d 180f 1811 b60c 63b2 09ad b602 3199
+    00010b0: 0037 b209 ad10 07bd 0005 5903 b20c 6653
+    00010c0: 5904 2a53 5905 2b53 5906 1909 5359 072a
+    00010d0: b402 39b8 023f 5359 0819 0653 5910 0619
+    00010e0: 1553 b609 b557 2a19 06b6 0c69 b20c 61b6
+    00010f0: 0c3a 2ab4 0434 24b6 0b63 2ab4 01fb b604
+    0001100: 5503 b60a 3ea7 0075 03b8 0282 190a 1304
+    0001110: 90b9 06ac 0200 1516 9900 06b8 0c6c 2a19
+    0001120: 0824 180d 180f 1811 b60c 6315 1699 0006
+    0001130: b80c 6fb2 09ad b602 3199 0037 b209 ad10
+    0001140: 07bd 0005 5903 b20c 6653 5904 2a53 5905
+    0001150: 2b53 5906 1909 5359 072a b402 39b8 023f
+    0001160: 5359 0819 0653 5910 0619 1553 b609 b557
+    0001170: 2a19 06b6 0c69 04b8 0282 2a19 06b6 0c72
+    0001180: 04b8 0282 b803 3319 22b6 0b36 b80b d7b8
+    0001190: 0c75 b1                                
+  Exception Handler Table:
+    bci [2416, 2618] => handler: 2621
+    bci [2621, 2626] => handler: 2621
+  Stackmap Table:
+    full_frame(@174,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245]},{})
+    same_locals_1_stack_item_frame(@175,Integer)
+    append_frame(@217,Integer)
+    append_frame(@223,Object[#1832])
+    full_frame(@284,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832]},{Object[#2],Object[#2245],Object[#2245],Double,Double,Double})
+    full_frame(@286,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832]},{Object[#2],Object[#2245],Object[#2245],Double,Double,Double,Object[#1832]})
+    same_locals_1_stack_item_frame(@318,Object[#1832])
+    full_frame(@319,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832]},{Object[#1832],Integer})
+    same_frame(@357)
+    same_frame_extended(@438)
+    same_frame(@482)
+    same_frame(@507)
+    append_frame(@571,Integer)
+    append_frame(@620,Float)
+    same_frame(@624)
+    same_locals_1_stack_item_frame(@625,Integer)
+    append_frame(@670,Integer,Integer)
+    same_frame(@694)
+    same_frame(@737)
+    same_frame(@740)
+    same_frame(@801)
+    same_frame_extended(@966)
+    same_frame(@982)
+    full_frame(@1038,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer},{Object[#2556],Integer})
+    full_frame(@1039,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer},{Object[#2556],Integer,Integer})
+    same_frame(@1098)
+    same_frame(@1124)
+    same_frame(@1134)
+    same_frame(@1142)
+    same_frame_extended(@1220)
+    same_frame(@1237)
+    same_frame(@1265)
+    append_frame(@1286,Integer,Object[#92])
+    append_frame(@1316,Integer,Integer)
+    same_frame(@1322)
+    append_frame(@1336,Object[#1934])
+    append_frame(@1403,Object[#1596],Object[#24])
+    same_frame(@1432)
+    same_locals_1_stack_item_frame(@1433,Integer)
+    append_frame(@1470,Integer)
+    append_frame(@1501,Object[#24])
+    same_frame(@1544)
+    same_frame(@1567)
+    append_frame(@1621,Object[#1314],Object[#1965])
+    chop_frame(@1631,3)
+    chop_frame(@1634,3)
+    full_frame(@1654,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Object[#1934]},{})
+    append_frame(@1685,Object[#1965],Object[#1934])
+    append_frame(@1755,Object[#1596])
+    same_frame_extended(@1849)
+    same_frame(@1893)
+    append_frame(@1897,Object[#5])
+    same_frame(@1907)
+    chop_frame(@1926,2)
+    chop_frame(@1936,2)
+    same_frame(@1999)
+    same_frame(@2010)
+    full_frame(@2046,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#1934]},{})
+    append_frame(@2100,Object[#20],Object[#1965],Object[#1934])
+    append_frame(@2162,Object[#2792])
+    same_frame(@2172)
+    append_frame(@2331,Object[#24],Object[#94],Object[#2818])
+    same_frame(@2375)
+    full_frame(@2405,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#1934],Object[#20],Object[#1965]},{})
+    chop_frame(@2408,2)
+    full_frame(@2427,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#1503],Object[#1934]},{})
+    append_frame(@2489,Object[#2792])
+    same_frame(@2499)
+    append_frame(@2585,Object[#24])
+    chop_frame(@2615,2)
+    full_frame(@2621,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#1503]},{Object[#1611]})
+    append_frame(@2629,Object[#1934])
+    same_frame_extended(@2739)
+    same_frame(@2769)
+    same_frame(@2777)
+    full_frame(@2808,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#3245],Object[#5]},{})
+    full_frame(@3048,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#3245],Object[#97],Object[#24],Double,Double,Double,Object[#2818],Integer,Object[#77],Object[#2829],Object[#2953]},{})
+    full_frame(@3082,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#3245],Object[#97],Object[#24],Double,Double,Double},{})
+    full_frame(@3085,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#3245],Object[#5]},{})
+    full_frame(@3175,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#104],Object[#24],Object[#956]},{})
+    same_frame_extended(@3274)
+    same_frame(@3290)
+    full_frame(@3293,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#104],Object[#5]},{})
+    same_frame(@3351)
+    full_frame(@3387,{Object[#2],Object[#79],Float,Long,Integer,Object[#885],Object[#657],Object[#602],Object[#2245],Object[#1682],Integer,Object[#390],Double,Double,Double,Object[#2245],Integer,Object[#1832],Integer,Float,Integer,Integer,Integer,Object[#92],Integer,Integer,Object[#1211],Integer,Object[#1832],Object[#104],Object[#79]},{})
+    same_frame_extended(@3559)
+    same_frame_extended(@3776)
+    same_frame(@3785)
+    same_frame_extended(@3894)
+    same_frame(@3902)
+    same_frame(@3919)
+    same_frame(@3943)
+    same_frame_extended(@4012)
+    same_frame(@4040)
+    same_frame(@4101)
+    same_frame_extended(@4197)
+    same_frame(@4229)
+    same_frame_extended(@4326)
+    same_frame(@4360)
+    same_frame(@4382)
+    same_frame(@4403)
+    same_frame(@4464)
+    same_frame(@4474)
+
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:512) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.m_239872_(Main.java:176) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:27) ~[fmlloader-1.19.2-43.2.8.jar%2395!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:512) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.m_239872_(Main.java:176) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[client-1.19.2-20220805.130853-srg.jar%23208!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:27) ~[fmlloader-1.19.2-43.2.8.jar%2395!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2382!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Mac OS X (aarch64) version 13.3.1
+	Java Version: 17.0.3, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 211812352 bytes (202 MiB) / 2147483648 bytes (2048 MiB) up to 8589934592 bytes (8192 MiB)
+	CPUs: 8
+	Processor Vendor: Apple Inc.
+	Processor Name: Apple M1 Pro
+	Identifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0
+	Microarchitecture: ARM64 SoC: Firestorm + Icestorm
+	Frequency (GHz): 24.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: Apple M1 Pro
+	Graphics card #0 vendor: Apple (0x106b)
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 0.00
+	Memory slot #0 clockSpeed (GHz): 0.00
+	Memory slot #0 type: unknown
+	Virtual memory max (MB): 20480.00
+	Virtual memory used (MB): 16553.03
+	Swap memory total (MB): 4096.00
+	Swap memory used (MB): 2952.63
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:-ZUncommit -XX:ZCollectionInterval=5 -XX:ZAllocationSpikeTolerance=2.0 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+DisableExplicitGC -Xms2048M -Xmx8192M -Xss1M
+	Launched Version: Forge 1.19.2
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: Apple M1 Pro GL version 4.1 Metal - 83.1, Apple
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: <disabled>
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 8x Apple M1 Pro
+	OptiFine Version: OptiFine_1.19.2_HD_U_I1
+	OptiFine Build: 20221213-150857
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.1 Metal - 83.1
+	OpenGlRenderer: Apple M1 Pro
+	OpenGlVendor: Apple
+	CpuCount: 8
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.8.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.8.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.8.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.8.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.8.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar OptiFine TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		client-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		forge-1.19.2-43.2.8-universal.jar                 |Forge                         |forge                         |43.2.8              |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		torohealth-1.19-forge-2.jar                       |ToroHealth                    |torohealth                    |1.19-forge-2        |COMMON_SET|Manifest: NOSIGNATURE
+		EnchantmentMachine-1.19.1-1.0.2.jar               |Enchantment Machine           |enchantmentmachine            |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		Disenchanting-forge-1.19-2.2.2.jar                |Disenchanting                 |disenchanting                 |2.2.0               |COMMON_SET|Manifest: NOSIGNATURE
+		IC2Classic-1.19.2-2.0.6.jar                       |IC2 Classic                   |ic2                           |1.19.2-2.0.6        |COMMON_SET|Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.7-forge.jar                 |Journeymap                    |journeymap                    |5.9.7               |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 20fafd7c-4062-4426-a33b-8501fcee9efe
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.8

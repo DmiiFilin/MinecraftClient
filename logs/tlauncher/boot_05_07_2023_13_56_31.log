@@ -1,0 +1,870 @@
+
+-------------------------------------------------------------------
+[Downloader2] Loaded configuration: normal
+[Downloader2] Files in queue 17
+[Downloader2] Starting download 17 files...
+[D#2] >  done http://res.tlauncher.org/b/libraries/com/google/guava/guava/19.0/guava-19.0.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/log4j/log4j/1.2.17/log4j-1.2.17.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/org/tukaani/xz/1.5/xz-1.5.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/org/tlauncher/tlauncher-resource/1.4/tlauncher-resource-1.4.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/com/github/junrar/junrar/0.7/junrar-0.7.jar 
+[D#2] >  done http://res.tlauncher.org/b/libraries/org/apache/httpcomponents/fluent-hc/4.5.13/fluent-hc-4.5.13.jar 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  http://res.tlauncher.org/unb/client/jre/mac/jre1.8.0_321.jre.zip
+java.net.SocketTimeoutException: Read timed out
+at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:273)
+at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:299)
+at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:340)
+at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:789)
+at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+at org.apache.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:200)
+at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:178)
+at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:308)
+at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:382)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:361)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:209)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  Failed to download from:  https://securerepository.net/update/downloads/jre/mac/jre1.8.0_321.jre.zip
+org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+[D#1] >  File is not reachable at all. 
+[D#1] >  Gave up trying to download this file. 
+org.tlauncher.tlauncher.downloader.GaveUpDownloadException: http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip -> /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre.zip
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:163)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+org.tlauncher.tlauncher.downloader.GaveUpDownloadException: http://res.tlauncher.org/b/client/jre/mac/jre1.8.0_321.jre.zip -> /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre.zip
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:163)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: org.tlauncher.tlauncher.downloader.RetryDownloadException: cannot unpack archive
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:122)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.download(DownloaderThread.java:150)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.run(DownloaderThread.java:92)
+Caused by: java.io.IOException: Cannot createScrollWrapper file, or it was created during runtime: /Users/dmiifilin/Library/Application Support/tlauncher/jvms/jre1.8.0_321.jre_temp/bin/javaws
+at org.tlauncher.util.FileUtil.createFile(FileUtil.java:329)
+at org.tlauncher.util.FileUtil.unZipAndTarGz(FileUtil.java:375)
+at org.tlauncher.util.FileUtil.unZip(FileUtil.java:362)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.unpack(PreparedEnvironmentComponentImpl.java:164)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl.access$100(PreparedEnvironmentComponentImpl.java:36)
+at org.tlauncher.tlauncher.updater.bootstrapper.PreparedEnvironmentComponentImpl$1.onComplete(PreparedEnvironmentComponentImpl.java:104)
+at org.tlauncher.tlauncher.downloader.DownloadableContainer.onComplete(DownloadableContainer.java:151)
+at org.tlauncher.tlauncher.downloader.Downloadable.onComplete(Downloadable.java:181)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.onComplete(DownloaderThread.java:252)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.downloadURL(DownloaderThread.java:239)
+... and 2 more
+Thread called by: org.tlauncher.util.async.ExtendedThread$ExtendedThreadCaller
+at org.tlauncher.util.async.ExtendedThread.<init>(ExtendedThread.java:17)
+at org.tlauncher.tlauncher.downloader.DownloaderThread.<init>(DownloaderThread.java:43)
+at org.tlauncher.tlauncher.downloader.Downloader.sortOut(Downloader.java:304)
+at org.tlauncher.tlauncher.downloader.Downloader.run(Downloader.java:255)
+
+Good bye!
+[Double running] clear time label
+flush now
